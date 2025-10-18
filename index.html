@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Helados Bon: Que buenos son! La mejor heladeria de Rep.Dom.">
+  <title>Helados Bon</title>
+  <style>
+    :root {
+      --principal: #c62828;
+      --fondo: #ffe0b2;
+      --texto: #333;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    a.skip-link {
+      position: absolute; top: -40px; left: 0;
+      background: var(--principal); color: #fff;
+      padding: 5px;
+    }
+    a.skip-link:focus { top: 0; }
+
+    h1 { text-decoration: underline; text-align:center; }
+    h2 { text-align:center; }
+
+    button {
+      background: var(--principal); color: #fff;
+      border: none; border-radius: 6px;
+      padding: 8px 12px; margin: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: #b71c1c; }
+
+    img {
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .grid { display: grid; gap: 1rem; justify-items: center; }
+    @media(min-width:768px) { .grid { grid-template-columns: repeat(3,1fr); } }
+
+    label { display:block; margin-top:10px; }
+    input, textarea { width:100%; padding:6px; border:1px solid #ccc; border-radius:4px; }
+
+    iframe { width:100%; height:300px; border:0; border-radius:8px; }
+
+    header { text-align:center; padding:1rem 0; }
+
+  </style>
+</head>
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <header>
+    <img src="bon.jpg" alt="Logo de Helados Bon" width="200" class="logo-animado">
+    <nav id="nav-bar" style="text-align:center;">
+      <!-- Botones dinámicos -->
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- Todo el contenido será generado por JS -->
+  </main>
+
+  <footer style="text-align:center;">
+    <p>&copy; 2025 Helados Bon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
